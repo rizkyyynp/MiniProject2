@@ -1,12 +1,10 @@
-import React from "react";
-import Login from "./pages/Login";
-
+import {useRoutes} from 'react-router-dom';
+import { routeList } from './routes/routeList';
 const App = () => {
-  return (
-    <div>
-    <Login />
-    </div>
-  );
+
+  const element = useRoutes(routeList);
+  return element;
+
 };
 
 export default App;
