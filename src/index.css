@@ -1,3 +1,75 @@
+/* index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    .input-div.focus:before,
+    .input-div.focus:after {
+        width: 50%;
+    }
+
+    .input-div.focus>div>h5 {
+        top: -8px;
+        font-size: 15px;
+    }
+
+    .input-div.focus>.i>i {
+        color: #38d39f;
+    }
+
+    .input-div:before,
+    .input-div:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0%;
+        height: 2px;
+        background-color: #38d39f;
+        transition: .4s;
+    }
+
+    .input-div>div {
+        position: relative;
+        height: 45px;
+    }
+
+    input:focus::placeholder {
+        color: transparent;
+    }
+
+    .colored-toast.swal2-icon-success {
+        background-color: #a5dc86 !important;
+    }
+
+    .colored-toast.swal2-icon-error {
+        background-color: #f27474 !important;
+    }
+
+    .colored-toast.swal2-icon-warning {
+        background-color: #f8bb86 !important;
+    }
+
+    .colored-toast.swal2-icon-info {
+        background-color: #3fc3ee !important;
+    }
+
+    .colored-toast.swal2-icon-question {
+        background-color: #87adbd !important;
+    }
+
+    .colored-toast .swal2-title {
+        color: white;
+    }
+
+    .colored-toast .swal2-close {
+        color: white;
+    }
+
+    .colored-toast .swal2-html-container {
+        color: white;
+    }
+
+}
