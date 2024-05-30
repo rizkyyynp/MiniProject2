@@ -18,7 +18,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="absolute top-0 bottom-0 bg-primary w-16 overflow-hidden transition duration-200 ease-linear shadow-bS1 hover:w-60 hover:transition-all hover:duration-500 hover:ease-in-out">
+        <nav className="fixed top-0 bottom-0 bg-primary w-16 h-full overflow-hidden transition duration-200 ease-linear shadow-bS1 hover:w-60 hover:transition-all hover:duration-500 hover:ease-in-out">
             <ul>
                 <li>
                     <Link to="/" className="relative text-secondary text-sm flex w-75 py-5 items-center hover:bg-third">
